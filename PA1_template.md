@@ -154,7 +154,7 @@ Now, a time-series plot of the 5-minute interval and the average number of steps
 
 ```r
 library(lattice)
-xyplot(steps~interval|weekday,dat=numsteps,type="l",xlab="Interval",ylab="Number of steps",main="Time-series plot of number of steps taken")
+xyplot(steps~interval|weekday,dat=numsteps,type="l",xlab="Interval",ylab="Number of steps",main="Time-series plot of number of steps taken",layout=c(1,2))
 ```
 
 ![plot of chunk unnamed-chunk-17](figure/unnamed-chunk-17-1.png) 
